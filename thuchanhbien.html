@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script</title>
+</head>
+<body>
+<table width="50%">
+    <tr>
+        <td><button type="button" onclick="m()">Điểm trung bình 3 môn</button></td>
+        <td><button type="button" onclick="n()">Đổi độ F sang độ C</button></td>
+        <td><button type="button" onclick="p()">Diện tích hình tròn</button></td>
+        <td><button type="button" onclick="q()">Chu vi hình tròn</button></td>
+    </tr>
+</table>
+<script>
+    function m() {
+        let a = parseInt(prompt("Nhập điểm môn Toán :"));
+        let b = parseInt(prompt("Nhập điểm môn Lý :"));
+        let c = parseInt(prompt("Nhập điểm môn Hóa :"));
+        let d =(a+b+c)/3;
+        alert("Điểm trung bình 3 môn là :" +d);
+
+    }
+    function n() {
+        let e = parseInt( prompt("Nhập số độ F"));
+        f=(e - 32)/1.8;
+        alert("Số độ C là" +f);
+
+    }
+    function p() {
+        let g = parseInt(prompt("Nhập bán kính đường tròn :")) ;
+        h=g*g*3.14;
+        alert("Diện tích hình tròn là :" +h);
+    }
+    function q() {
+        let i = parseInt(prompt("Nhập bán kính đường tròn :")) ;
+        j=2*i*3.14;
+        alert("Chu vi đường tròn là :" +j);
+
+    }
+
+</script>
+
+</body>
+</html>
